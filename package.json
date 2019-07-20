@@ -4,7 +4,7 @@
   "description": "a milistic todo-app using mvc approach",
   "main": "app.js",
   "scripts": {
-    "start": "node /app.js"
+    "start": "node app.js"
   },
   "engines": {
     "node": "10.15.0"
