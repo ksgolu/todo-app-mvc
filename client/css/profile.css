@@ -1,0 +1,215 @@
+body{
+    padding:0px;
+    margin:0;
+    background-color: #464b5e;
+    font-size: 62.5%;
+}
+
+.header-container
+{
+    margin:0;
+    padding:0;
+    height: auto;
+    /* background-color:  #20222b; */
+    background: linear-gradient(black,#20222b);
+    display:flex;
+    padding: 0 2.0rem;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid ;
+    margin-bottom: 2.0rem;
+}
+
+.header-container__text
+{
+    margin-left:0px;
+    margin: auto 0;
+    padding: 1.6rem 0;
+}
+.header-container h3
+{
+    margin: 0;
+}
+.header-container__text p
+{
+    margin:0;
+    padding:0;
+    color:wheat;
+    font-size: 1.0rem;
+}
+.header-container__button
+{
+    margin:auto 0;
+}
+.todo-widget,.form-container
+{
+    /* max-height:100vh; */
+    overflow-y: auto;
+    /* max-width: 60%; */
+    margin: auto;
+    margin-bottom: 10px;
+    margin: 0 0.5rem;
+    /* border: 1px solid red; */
+}
+@media(min-width:45rem)
+{
+    .todo-widget,.form-container
+    {
+        width:60%;
+        margin:auto;
+    }
+}
+
+
+.todo-container, .form-container 
+{
+    padding: 0 1.5rem;
+    background-color:#14161b; /* #333745;*/
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    /* 3.0rem; */
+    border-radius: 10px;
+   margin-bottom: 5px;
+   /* border: 1px solid red; */
+}
+.todo-container__text 
+{
+    color:white;
+    font-size: 1.2rem;
+    margin: auto 0;
+    padding: 15px 0;
+  
+}
+
+.todo-container__text h1
+{
+    margin:0;
+}
+
+.todo-container__buttons
+{
+    border: 1px solid red;
+    margin: auto 0;
+    text-align: right;
+    min-width: 7.0rem;
+}
+
+.todo-container__buttons form 
+{
+  
+    /* border: 2px solid white; */
+    
+    
+}
+
+.todo-container__highlite
+{
+    background-color:black;
+    height:2px;
+}
+.btn
+{
+    height :25px;
+    width: 25px;
+    margin: 0 2px;
+     
+    border:none;
+}
+.btn:hover
+{
+    height: 30px;
+    width: 30px;
+}
+.delete-btn
+{
+    background: url('../assets/Cancel_48px.png') no-repeat ;
+    background-size: contain; 
+}
+.edit-btn
+{
+    background: url('../assets/minus_48px.png') no-repeat ;
+    background-size: contain; 
+}
+.done-btn
+{
+    background: url('../assets/ok_48px.png') no-repeat ;
+    background-size: contain; 
+}
+.form-container
+{
+    background-color: #20222b;
+   
+    /* justify-content: space-between; */
+    padding: 10px 10px;
+    border-radius: initial;
+    margin-bottom:1.5rem;
+    /* width: initial; */
+}
+.form-container__form
+{
+    display: flex;
+    flex-direction:column;
+    width: 100%; 
+    /* border: 2px solid white; */
+}
+@media(min-width:45rem)
+{
+    .form-container__form
+    {
+        flex-direction:row;
+    }
+
+}
+.form-container__input
+{
+    color:white;
+    text-align: center;
+    border: none; 
+    height:30px; 
+    background-color:transparent;  
+    border-bottom: 2px solid white;
+   flex-grow: 1;
+   margin-right:15px;
+    margin-bottom: 1.0rem;
+    padding: 0.5rem;
+}
+ @media(min-width:45rem)
+ {
+    .form-container__input
+    {
+        text-align:left ;
+        margin-bottom: 0.0rem;
+    }
+ }
+input:hover
+{
+    border-bottom: 2px solid yellow;   
+}
+
+
+.form-container__button, .header-container__signout
+{
+    margin: auto;
+     height:2.0rem;
+    
+    width: 100%;
+    background-color: tomato;
+    border-radius: 15px;   
+    color: white;
+    border:none;
+}
+@media(min-width:45rem)
+{
+    .form-container__button, .header-container__signout
+    {
+        width:70px;  
+    }
+  
+}
+
+.header-container__signout
+{
+    
+    background-color: goldenrod;
+}

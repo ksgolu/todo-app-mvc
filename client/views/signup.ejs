@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/signin.css">
+    <title>sign-in</title>
+</head>
+<body>
+    <section class="container">
+        <section class="login-container">
+            <article class="login-container__signin">
+                    <form action="/signup" method="post" class="login-container__form">
+                        <input 
+                            class=" input login-container__email-input"
+                            type="text"
+                            name="name"
+                            required
+                            placeholder="Name"                   
+                        >
+                        
+                        <input 
+                            class=" input login-container__email-input"
+                            type="email"
+                            name="email"
+                            required
+                            placeholder="Register email-id"                   
+                        >
+                        <input 
+                            class=" input login-container__password-input"
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            required
+                        >
+                        <button
+                            class=" btn login-container__submit-btn"
+                            name="submit"
+                            type="submit"
+                        >
+                            Sign-up
+                        </button>            
+                    </form>
+            </article>
+           
+            <section class="login-container__signup">                
+                <article class="container__signup-header">
+                    <p>Have an Id. Start taking your note</p>
+                    <p>click on sign-in here</p>
+                </article>
+
+                <article class="container__signup-button">
+                  <form method="get" action="/signin">
+                        <button
+                        type="submit";
+                        class="btn container__signup__signup-btn"
+                    >
+                    Sign-in here
+                    </button>
+                    </form>
+                </article>
+            </section>
+        </section>
+        <section class="side-container">
+            <section class="side-container__header">
+                <h1>With To-do App</h1>
+                <p>Remember Everything <blockquote>Forget Nothing !</blockquote></p>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

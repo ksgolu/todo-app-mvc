@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+   
+
+</head>
+<body>
+    <section class="header-container">
+        <article class="header-container__text">
+            <h1><%= userName %></h1>
+            <p>Remember everything forget nothing!</p>
+        </article>
+        <article class="header-container__button">
+            <form method="get" action="/signout">
+            <button type="submit" class="header-container__signout">Logout</button>
+            </form>
+        </article>
+            
+    </section>
+
+    <section class="todo-widget">
+    
+      <% list.forEach(function(items){%>
+      <%if(items.dataValues.done=='yes') { %>
+        <section class="todo-container" style="background-color:#333745">
+        <article class="todo-container__text">
+                <h1 style="color:wheat"><%=items.dataValues.item %></h1>
+      <%} else {%>
+       <section class="todo-container">
+       <article class="todo-container__text">
+                <h1><%=items.dataValues.item %></h1>
+      <%}%>      
+       </article>          
+            <article class="todo-container__buttons">
+            <form  method="post" action="/">
+            
+                <input 
+                  type="hidden" 
+                  name="text" 
+                  value="<%= items.dataValues.item %>"
+                />
+                
+                <button 
+                  class="delete-btn btn"
+                  type="submt" 
+                  formaction="/delete" 
+                >
+                </button>
+                
+                <button 
+                  class="edit-btn btn"
+                  type="button"                  
+                  onclick=""
+                >
+                </button>
+                
+                 <button 
+                  type="submit" 
+                  class="done-btn btn" 
+                  formaction="/done"
+                 >
+                </button>                 
+               
+            </form>
+            </article>        
+        </section> 
+    <%});%>
+          
+    </section>
+      
+
+<section class="form-container">
+    
+        <form method='post'action="/" class="form-container__form">
+            <input
+                  class="form-container__input"
+                  type="text"
+                  id="note"
+                  name="todo"
+                  placeholder="whats to remember"
+                  required
+                  
+                />
+            <button 
+            class="form-container__button" 
+            type="submit"
+            autofocus
+            >add</button>
+           
+        </form>
+
+</section>
+     
+   </body>
+</html>

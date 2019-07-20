@@ -1,0 +1,22 @@
+{
+  "name": "todo-app-mvc",
+  "version": "1.0.0",
+  "description": "a milistic todo-app using mvc approach",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "author": "kumar satyam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "morgan": "^1.9.1",
+    "sequelize": "^5.9.0",
+    "sqlite3": "^4.0.9"
+  }
+}
