@@ -3,7 +3,7 @@
 const express = require("express");
 const session = require('express-session');
 //const cookieParser = require('cookie-parser');
-const router = express.Router();
+// const router = express.Router();
 const app = express();
 const cors = require("cors");
 const compression = require("compression");
@@ -73,7 +73,7 @@ app.use("/",mainRoutes);
 
 
 app.set("port", process.env.PORT || 4000); //Line11
-app.listen(4000, () => {
+app.listen(app.get("port"), () => {
   //Line12
   console.log("Application running in port: " + app.get("port"));
 });

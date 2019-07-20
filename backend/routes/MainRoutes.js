@@ -1,7 +1,7 @@
 console.log('Main route start..');
 const express = require('express');
 const router = express.Router();
-const session = require('express-session');
+// const session = require('express-session');
 
 const middle = require('../controllers/middle')
 const mainController = require('../controllers/mainController');

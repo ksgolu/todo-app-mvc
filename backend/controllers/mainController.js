@@ -1,3 +1,5 @@
+console.log('Main controller start...')
+
 const Todos = require('./todoController');
 
 function signin(req,res)
